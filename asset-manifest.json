@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tivix-dashboard/static/css/main.628ff47d.chunk.css",
+    "main.js": "/tivix-dashboard/static/js/main.7b19d0ac.chunk.js",
+    "main.js.map": "/tivix-dashboard/static/js/main.7b19d0ac.chunk.js.map",
+    "runtime-main.js": "/tivix-dashboard/static/js/runtime-main.680ddb19.js",
+    "runtime-main.js.map": "/tivix-dashboard/static/js/runtime-main.680ddb19.js.map",
+    "static/js/2.b4e1510b.chunk.js": "/tivix-dashboard/static/js/2.b4e1510b.chunk.js",
+    "static/js/2.b4e1510b.chunk.js.map": "/tivix-dashboard/static/js/2.b4e1510b.chunk.js.map",
+    "index.html": "/tivix-dashboard/index.html",
+    "precache-manifest.c4d92c2bccb7436aa839977dcea13e58.js": "/tivix-dashboard/precache-manifest.c4d92c2bccb7436aa839977dcea13e58.js",
+    "service-worker.js": "/tivix-dashboard/service-worker.js",
+    "static/css/main.628ff47d.chunk.css.map": "/tivix-dashboard/static/css/main.628ff47d.chunk.css.map",
+    "static/media/person1.jpeg": "/tivix-dashboard/static/media/person1.6f009fcf.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.680ddb19.js",
+    "static/js/2.b4e1510b.chunk.js",
+    "static/css/main.628ff47d.chunk.css",
+    "static/js/main.7b19d0ac.chunk.js"
+  ]
+}
