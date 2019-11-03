@@ -1,0 +1,75 @@
+@import "../../styles/abstracts/variables";
+
+.sidebar {
+    background-color: $color-white;
+    flex: 0 0 18%;
+    padding: 4.5rem 0;
+
+    @media only screen and (max-width: 800px) { display: none };
+}
+
+.nav {
+    font-size: 1.4rem;
+
+    &__menu {
+        padding: 2rem;
+        color: $color-grey;
+    }
+
+    &__list {
+        list-style: none;
+
+        &-item {
+            position: relative;
+            margin-bottom: .3rem;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 3px;
+                background-color: $color-primary;
+                transform: scaleY(0);
+                transition: transform .2s,
+                            width .3s cubic-bezier(1,0,0,1) .2s,
+                            background-color .1s;
+            }
+
+            &:hover::before,
+            &--active::before {
+                transform: scaleY(1);
+                width: 100%;
+            }
+
+            &--active span,
+            &--active svg,
+            &:hover span,
+            &:hover svg {
+                color: $color-tertiary!important;
+            }
+        }
+
+        &-link:link,
+        &-link:visited {
+            padding: 1.5rem 2rem;
+            color: $color-black;
+            text-decoration: none;
+            display: block;
+            z-index: 1;
+            position: relative;
+
+            svg {
+                font-size: 2.4rem;
+                vertical-align: middle;
+                color: $color-grey;
+            }
+
+            span{
+                padding-left: 3rem;
+                vertical-align: middle;
+            }
+        }
+    }
+}

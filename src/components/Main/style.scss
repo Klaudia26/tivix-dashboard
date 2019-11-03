@@ -1,0 +1,19 @@
+@import "../../styles/abstracts/variables";
+
+.main {
+    width: 100%;
+    padding: 3rem;
+    font-size: 1.2rem;
+
+    @media only screen and (max-width: 800px) { padding: 1.5rem };
+}
+
+.box-meeting {
+    margin: 2rem 1rem;
+    border-radius: 0.2rem;
+
+    &__heading{
+        background-color: $color-secondary;
+        height: 7rem;
+    }
+}

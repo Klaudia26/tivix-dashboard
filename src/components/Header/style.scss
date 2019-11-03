@@ -1,0 +1,122 @@
+@import "../../styles/abstracts/variables";
+
+.header {
+    font-size: 1.4rem;
+    line-height: 8rem;
+    background-color: $color-white;
+    display: flex;
+    box-shadow: $shadow-dark;
+    z-index: 1;
+    position: relative;
+
+    .logo {
+        font-size: 2.5rem;
+        color: $color-white;
+        background-color: $color-tertiary;
+        flex: 0 0 18%;
+        text-align: center;
+    }
+
+    // SEARCH
+    .search {
+        flex: 0 0 55%;
+        display: flex;
+        position: relative;
+        border-right: 1px solid $color-line;
+       
+        &__input {
+            width: 100%;
+            padding-left: 7rem;
+            font-size: 2.5rem;
+            background-color: $color-secondary;
+            border: none;
+            outline: none;
+            color: $color-white;
+            cursor: pointer;
+        }
+
+        svg {
+            position: absolute;
+            color: $color-white;
+            left: 4rem;
+            font-size: 2.5rem;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+    }
+
+    // USER NAVIGATION
+    .user {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        color: $color-white;
+        background-color: $color-secondary;
+        cursor: pointer;
+    
+        &__name {
+            &--color {
+                color: $color-grey;
+            }
+
+            @media only screen and (max-width: 700px) { display: none };
+        }
+    
+        &__photo {
+            border-radius: 50%;
+            height: 4rem;
+            vertical-align: middle;
+        }
+
+        &__nav {
+            padding: 0 1.5rem;
+            position: relative;
+            
+            &:hover {
+                &::after {
+                    content: '';
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: $color-line;
+                }
+            }
+
+            &-icon {
+                width: .4rem;
+                height: .4rem;
+                position: relative;
+                z-index: 2;
+                display: inline-block;
+                vertical-align: middle;
+                border-radius: 50%;
+                background-color: $color-white;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    background-color: $color-white;
+                    top: -.7rem;
+                    width: .4rem;
+                    height: .4rem;
+                    border-radius: 50%;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    background-color: $color-white;
+                    bottom: -.7rem;
+                    width: .4rem;
+                    height: .4rem;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

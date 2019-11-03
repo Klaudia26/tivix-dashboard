@@ -1,0 +1,82 @@
+@import "../../styles/abstracts/variables";
+
+.card {
+    border-radius: 0.2rem;
+    box-shadow: $shadow-dark;
+    background-color: $color-white;
+
+    &__header {
+        background-color: $color-secondary;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        font-size: 1.2rem;
+        border-top-right-radius: 0.2rem;
+        border-top-left-radius: 0.2rem;
+
+        &--light{
+            background-color: $color-white;
+
+            .card__header-title {
+                color: $color-tertiary;
+            }
+        }
+
+        &-title {
+            font-weight: 400;
+            color: $color-white
+        }
+
+        &-action {
+            color: $color-grey;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+    }
+
+    &__body {
+        &--dark {
+            background-color: $color-secondary;
+            border-bottom-right-radius: 0.2rem;
+            border-bottom-left-radius: 0.2rem;
+        }
+
+        &-number {
+            padding: 0 3rem;
+            font-size: 3.5rem;
+            color: $color-white
+        }
+
+        .table-row {
+            padding: 2rem;
+            cursor: pointer;
+            border-top: 1px solid $color-grey;
+
+            &:hover {
+                background: $color-primary;
+            }
+
+            .user__photo {
+                border-radius: 50%;
+                height: 3rem;
+                margin-right: 1rem;
+                vertical-align: middle;
+            }
+
+            .small-text {
+                font-size: 1rem;
+                color: $color-dark-grey;
+            }
+            
+            .arrow-box {
+                @media only screen and (max-width: 990px) { display: none };
+            }
+
+            svg {
+                font-size: 2.3rem;
+                fill: $color-grey;
+                vertical-align: middle;
+            }
+        }
+    }
+}
